@@ -35,10 +35,11 @@ def main():
             # horizontal:
             for i in range(0, 512, 32):
                 pygame.draw.line(screen, "black", (0, i), (640, i))
+            # vertical:
+            for j in range(0, 640, 32):
+                pygame.draw.line(screen, "black", (j, 0), (j, 512))
 
-                # vertical:
-                for j in range(0, 640, 32):
-                    pygame.draw.line(screen, "black", (j, 0), (j, 512))
+
 
             # You can draw the mole with this snippet:
             # screen.blit(mole_image, mole_image.get_rect(topleft=(x,y)))
